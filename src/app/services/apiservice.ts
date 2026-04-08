@@ -21,7 +21,7 @@ export class ApiService {
     return this.http.get<any[]>(`${this.baseUrl}/materias`);
   }
 
-  getSituacao(id: number): Observable<any[]> {
+  getSituacao(id: string): Observable<any[]> {
     return this.http.get<any[]>(`${this.baseUrl}/alunos/${id}/situacao`);
   }
 }

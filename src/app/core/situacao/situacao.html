@@ -1,0 +1,26 @@
+<div style="text-align: center;">
+    <h1>Situação Escolar do Aluno</h1>
+<input 
+    type="text"
+    [(ngModel)]="matriculaAluno"
+    placeholder="Matrícula do aluno"
+  />
+
+  <button (click)="buscarSituacao()">Buscar</button>
+ 
+
+
+<table >
+    <thead>
+    <th>Materia</th>
+    <th>Média</th>
+    </thead>
+    <tbody >
+        <tr *ngFor="let s of situacao">
+    <td>{{s.materia}}</td>
+    <td>{{s.media}}</td>
+  </tr>
+    </tbody>
+</table>
+ 
+</div>
