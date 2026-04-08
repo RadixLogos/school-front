@@ -42,16 +42,13 @@ mostrarErro() {
         (result:any)=>{
          this.zone.run(() => {
   this.situacao = result;
+           this.cdr.detectChanges();
 });
-          this.cdr.detectChanges();
+         
           console.log(this.situacao);
         },
         (error: any) =>{
-          Swal.fire({
-            title: "Erro",
-            text: "Matricula não existe",
-            icon:"error"
-          })
+        
         }
       );
     }

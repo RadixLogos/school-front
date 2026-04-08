@@ -1,22 +1,27 @@
 <div style="text-align: center;">
     <h1>Situação Escolar do Aluno</h1>
-<input 
+<form (ngSubmit)="buscarSituacao()">
+  <input 
     type="text"
     [(ngModel)]="matriculaAluno"
+    name="matricula"
     placeholder="Matrícula do aluno"
   />
 
-  <button (click)="buscarSituacao()">Buscar</button>
+  <button type="submit">Buscar</button>
+</form>
  
 
 
 <table >
     <thead>
-    <th>Materia</th>
+    <th>Nome</th>
+        <th>Materia</th>
     <th>Média</th>
     </thead>
     <tbody >
         <tr *ngFor="let s of situacao">
+    <td>{{s.nomeAluno}}</td>
     <td>{{s.materia}}</td>
     <td>{{s.media}}</td>
   </tr>
