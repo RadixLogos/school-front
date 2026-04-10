@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { AlunosComponent } from './core/alunos/alunos';
 import { Situacao } from './core/situacao/situacao';
 
+
 export const routes: Routes = [
     {
         path: "alunos",
@@ -10,5 +11,6 @@ export const routes: Routes = [
     {
         path:"situacao",
         component: Situacao
-    }
+    },
+    { path: '', redirectTo: 'alunos', pathMatch: 'full' }
 ];

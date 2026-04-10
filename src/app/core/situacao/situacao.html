@@ -12,18 +12,19 @@
 </form>
  
 
-
+<h2>{{nomeAluno}}</h2>
 <table >
     <thead>
-    <th>Nome</th>
+    
         <th>Materia</th>
     <th>Média</th>
+    <th>Situação</th>
     </thead>
     <tbody >
         <tr *ngFor="let s of situacao">
-    <td>{{s.nomeAluno}}</td>
     <td>{{s.materia}}</td>
     <td>{{s.media}}</td>
+    <td>{{s.situacao}}</td>      
   </tr>
     </tbody>
 </table>

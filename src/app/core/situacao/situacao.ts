@@ -14,7 +14,7 @@ export class Situacao  implements OnInit{
   constructor(private service: ApiService,private cdr: ChangeDetectorRef,private zone: NgZone) {}
   matriculaAluno:string = "";;
   situacao: any[] = [];
-
+  nomeAluno: String = "";
   
   ngOnInit(): void {
     
@@ -42,6 +42,7 @@ mostrarErro() {
         (result:any)=>{
          this.zone.run(() => {
   this.situacao = result;
+  this.nomeAluno = result[0].nomeAluno;
            this.cdr.detectChanges();
 });
          

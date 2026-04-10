@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+  gap: 20px;
+  background: #eee;
+  padding: 10px;
+}
+
+.ativo {
+  font-weight: bold;
+  color: blue;
+}
