@@ -1,0 +1,17 @@
+<h2>Professores</h2>
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Disciplinas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of professores">
+                <td>{{p.nome}}</td>
+                <td>{{p.materias}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

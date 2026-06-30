@@ -9,3 +9,14 @@
   font-weight: bold;
   color: blue;
 }
+
+.logo{
+  width: 50px;
+  height: auto;
+  text-align: right; 
+  margin-left: auto;
+}
+
+.logo-container {
+  margin-left: auto;
+}
